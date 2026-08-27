@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EngApp — Legal</title>
+<style>
+  :root {
+    --ground: #ffffff; --ink: #1a1a2e; --ink-soft: #4a4a63;
+    --line: #e2e0ea; --brand: #5B4FE0; --surface: #f7f6fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #14121c; --ink: #eceaf5; --ink-soft: #b3aec6;
+      --line: #322e45; --brand: #a79bff; --surface: #1d1a2a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex; align-items: center; justify-content: center; min-height: 100vh;
+  }
+  .wrap { max-width: 520px; padding: 40px 20px; width: 100%; }
+  h1 { font-size: 32px; margin: 0 0 8px; letter-spacing: -.02em; }
+  p { color: var(--ink-soft); margin: 0 0 28px; }
+  a.card {
+    display: block; padding: 16px 18px; margin-bottom: 12px;
+    background: var(--surface); border: 1px solid var(--line); border-radius: 8px;
+    text-decoration: none; color: var(--ink); font-weight: 600;
+  }
+  a.card span { display: block; font-weight: 400; font-size: 14px; color: var(--ink-soft); margin-top: 2px; }
+  a.card:hover { border-color: var(--brand); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>EngApp</h1>
+  <p>Legal documents.</p>
+  <a class="card" href="./privacy.html">Privacy Policy<span>What we collect, and how children's accounts are protected</span></a>
+  <a class="card" href="./terms.html">Terms of Service<span>Accounts, subscriptions, classes and acceptable use</span></a>
+</div>
+</body>
+</html>
