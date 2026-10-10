@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — EngApp</title>
+<style>
+  :root {
+    --ground: #ffffff; --ink: #1a1a2e; --ink-soft: #4a4a63;
+    --line: #e2e0ea; --brand: #5B4FE0; --surface: #f7f6fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #14121c; --ink: #eceaf5; --ink-soft: #b3aec6;
+      --line: #322e45; --brand: #a79bff; --surface: #1d1a2a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 20px 96px; }
+  h1 { font-size: clamp(28px, 5vw, 38px); line-height: 1.15; margin: 0 0 8px; letter-spacing: -.02em; }
+  h2 { font-size: 20px; margin: 40px 0 12px; letter-spacing: -.01em; }
+  p, li { color: var(--ink-soft); }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  .meta { color: var(--ink-soft); font-size: 14px; margin: 0 0 32px; }
+  a { color: var(--brand); }
+  .contact {
+    margin: 32px 0; padding: 20px 22px; background: var(--surface);
+    border: 1px solid var(--line); border-radius: 8px;
+  }
+  .contact a { font-weight: 600; font-size: 17px; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 14px; color: var(--ink-soft); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Support</h1>
+<p class="meta">EngApp</p>
+
+<p>Welcome to the E&amp;G Support Center! We're here to help with any questions or issues related to using our app.</p>
+
+<h2>You can contact us about</h2>
+<ul>
+  <li>Registration and sign-in issues</li>
+  <li>Subscriptions, billing, and restoring purchases</li>
+  <li>Technical issues and app functionality</li>
+  <li>Account deletion and privacy requests</li>
+  <li>Feedback and suggestions</li>
+</ul>
+
+<div class="contact">
+  <p style="margin:0 0 4px;">Contact us</p>
+  <a href="mailto:engappsupport@gmail.com">engappsupport@gmail.com</a>
+</div>
+
+<h2>Before you write in</h2>
+<p>A few issues can be solved faster directly in the app:</p>
+<ul>
+  <li><strong>Restore a purchase not showing up:</strong> open the Premium/Teacher paywall and tap "Restore Purchases".</li>
+  <li><strong>Cancel or manage a subscription:</strong> this is handled by Apple or Google, not by us &mdash; go to your device's App Store or Google Play subscription settings.</li>
+  <li><strong>Delete your account:</strong> see <a href="./delete-account.html">Delete Your Account</a> for the exact steps and what data is removed.</li>
+</ul>
+
+<h2>Response time</h2>
+<p>We aim to reply within 2&ndash;3 business days. Please include your account email and, for purchase issues, the platform (iOS or Android) and approximate purchase date &mdash; it helps us find your record faster.</p>
+
+<footer>
+  <a href="./">EngApp</a> &middot; <a href="./privacy.html">Privacy Policy</a> &middot; <a href="./terms.html">Terms of Service</a>
+</footer>
+
+</div>
+</body>
+</html>
