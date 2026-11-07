@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — EngApp</title>
+<link rel="icon" href="./favicon.png">
 <style>
   :root {
     --ground: #ffffff; --ink: #1a1a2e; --ink-soft: #4a4a63;
@@ -44,13 +45,9 @@
 <div class="wrap">
 
 <h1>Privacy Policy</h1>
-<p class="meta">EngApp &middot; Last updated 6 October 2026</p>
+<p class="meta">EngApp &middot; Last updated 7 November 2026</p>
 
 <p>EngApp is an English-learning app for Hebrew speakers. This policy explains what we collect, why, and what you can do about it.</p>
-
-<div class="box">
-  <p><strong>Your age group, not your date of birth.</strong> Before any sign-in option is shown, every new user is asked their date of birth on a neutral screen. The date of birth is used only on your device to work out an age group (child, teen or adult) and is never stored or sent to us. Only the age group is stored with the account, and it decides which advertising and privacy protections apply. See <a href="#minors">Age groups</a>.</p>
-</div>
 
 <h2>Who we are</h2>
 <p>For any question about this policy or your data, contact <a href="mailto:engappsupport@gmail.com">engappsupport@gmail.com</a>.</p>
@@ -61,7 +58,9 @@
   <thead><tr><th>Data</th><th>Why</th></tr></thead>
   <tbody>
     <tr><td>Email address and account identifier, via Sign in with Apple or Google</td><td>To create and secure your account. The email is stored in our authentication provider (Supabase). If you use Sign in with Apple and choose Hide My Email, we receive and store Apple&#8217;s private relay address instead of your real email. We never see or store your password. We do not take your name from Google or Apple.</td></tr>
+    <tr><td>Account identifier only, no email, if you choose &#8220;Continue as Guest&#8221;</td><td>To let you use the app and buy a subscription without registering. See <a href="#guest">Guest accounts</a>.</td></tr>
     <tr><td>Nickname (display name) you choose yourself</td><td>Shown to you, and to your teacher and classmates if you join a class. If you rank in the top 100 for a month, also shown with your points on the in&#8209;app leaderboard, visible to all users.</td></tr>
+    <tr><td>Report records: who you reported, the name reported, the context (leaderboard, class, or group game), and any reason you gave</td><td>To review reports of offensive or abusive display names. Only visible to us &mdash; the reported user is never told who reported them.</td></tr>
     <tr><td>Age group (child, teen or adult)</td><td>Worked out on your device from the date of birth you enter on the age screen, to determine which advertising rules and protections apply. <strong>The date of birth itself is never stored or sent to us &mdash; only the age group is.</strong> See <a href="#minors">Age groups</a>.</td></tr>
     <tr><td>English level, learning progress, words marked learned, review schedule, streak, custom words and folders</td><td>To run the app and pick what to teach you next.</td></tr>
     <tr><td>Class membership, join code, teacher/school role</td><td>Only if you join a class or are a teacher.</td></tr>
@@ -89,6 +88,9 @@
 <p>Google's handling of ad data is described in <a href="https://policies.google.com/technologies/partner-sites">Google's Privacy &amp; Terms</a>.</p>
 
 <h2 id="minors">Age groups</h2>
+<div class="box">
+  <p><strong>Your age group, not your date of birth.</strong> Before any sign-in option is shown, every new user is asked their date of birth on a neutral screen. The date of birth is used only on your device to work out an age group (child, teen or adult) and is never stored or sent to us. Only the age group is stored with the account, and it decides which advertising and privacy protections apply. See <a href="#minors">Age groups</a>.</p>
+</div>
 <p>EngApp can be used by learners of all ages. When you first open the app you are asked your date of birth on a neutral screen (no answer is pre-selected). It is used only on your device to work out one of three age groups &mdash; child, teen or adult &mdash; and is then discarded. The age group is stored with the account and cannot be changed afterwards, so the protections that apply to an account cannot be removed by re&#8209;answering.</p>
 <p>For a child or teen account, and for any account whose age group is not known, the following applies:</p>
 <ul>
@@ -101,6 +103,15 @@
 </ul>
 <p>If you are a parent or guardian and want to review or delete your child&#8217;s data, contact <a href="mailto:engappsupport@gmail.com">engappsupport@gmail.com</a> and we will act on it. You can also delete the account in the app (Settings &rarr; Delete Account).</p>
 
+<h2 id="guest">Guest accounts</h2>
+<p>You can use EngApp, including buying a subscription, without signing in with Google or Apple, by choosing <strong>Continue as Guest</strong>. A guest account has an account identifier but no email address, name, or password &mdash; we have no way to identify who you are beyond the device you used.</p>
+<p>Your progress, settings, and any subscription are saved against that guest account exactly like a regular account, for as long as the account exists.</p>
+<ul>
+  <li><strong>Connecting Google or Apple later</strong> keeps the same account and all its data &mdash; nothing is lost or re&#8209;created, you simply add a way to sign back in from another device.</li>
+  <li><strong>If you never connect an account</strong>, your only way back into a guest account is the device and app install you created it on. If you sign out, EngApp keeps a local, encrypted backup of that session on the device to let you switch back to it later, but this is a convenience, not a guarantee &mdash; it can stop working if you reinstall the app, clear its storage, or leave it unused long enough for the session to expire. We cannot recover a guest account for you by email or any other means, because we hold no contact information for it.</li>
+  <li>If you sign into an existing Google/Apple account from a guest session, the two remain separate accounts with separate data; EngApp does not merge them automatically.</li>
+</ul>
+
 <h2>Who we share data with</h2>
 <p>We do not sell personal data. We share only what these services need to function:</p>
 <ul>
@@ -109,6 +120,7 @@
   <li><strong>Google AdMob</strong> &mdash; advertising.</li>
   <li><strong>RevenueCat</strong>, with Apple and Google &mdash; subscription management, keyed by an internal user identifier.</li>
   <li><strong>Expo</strong> &mdash; delivery of push notifications.</li>
+  <li><strong>Resend</strong> &mdash; delivers the email that notifies us when a report is submitted.</li>
   <li><strong>Apple and Google</strong> &mdash; sign&#8209;in, and (through your device's operating system) speech recognition during speaking practice, as described in <a href="#microphone">Microphone and speech recognition</a>.</li>
 </ul>
 <p>If you join a class, your display name and learning progress are visible to that class's teacher. That is the purpose of a class. If you rank in the top 100 on the monthly leaderboard, your display name and points are visible to all EngApp users for that month.</p>

@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>EngApp — Legal</title>
+<link rel="icon" href="./favicon.png">
 <style>
   :root {
     --ground: #ffffff; --ink: #1a1a2e; --ink-soft: #4a4a63;
@@ -25,22 +26,43 @@
   h1 { font-size: 32px; margin: 0 0 8px; letter-spacing: -.02em; }
   p { color: var(--ink-soft); margin: 0 0 28px; }
   a.card {
-    display: block; padding: 16px 18px; margin-bottom: 12px;
+    display: flex; align-items: center; gap: 14px;
+    padding: 16px 18px; margin-bottom: 12px;
     background: var(--surface); border: 1px solid var(--line); border-radius: 8px;
     text-decoration: none; color: var(--ink); font-weight: 600;
   }
-  a.card span { display: block; font-weight: 400; font-size: 14px; color: var(--ink-soft); margin-top: 2px; }
+  .card-text span { display: block; font-weight: 400; font-size: 14px; color: var(--ink-soft); margin-top: 2px; }
   a.card:hover { border-color: var(--brand); }
+  .card-icon {
+    flex: none; width: 36px; height: 36px; border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    background: color-mix(in srgb, var(--brand) 14%, transparent);
+    color: var(--brand);
+  }
+  .card-icon svg { width: 18px; height: 18px; display: block; }
+  .card-text { flex: 1; min-width: 0; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <h1>EngApp</h1>
-  <p>Legal documents.</p>
-  <a class="card" href="./privacy.html">Privacy Policy<span>What we collect, and how teen accounts are protected</span></a>
-  <a class="card" href="./terms.html">Terms of Service<span>Accounts, subscriptions, classes and acceptable use</span></a>
-  <a class="card" href="./delete-account.html">Delete Your Account<span>How to delete your account and what data is removed</span></a>
-  <a class="card" href="./support.html">Support<span>Contact us about sign-in, billing, bugs and feedback</span></a>
+  <p>Everything you need to know about your privacy, your account, and using EngApp.</p>
+  <a class="card" href="./privacy.html">
+    <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 9 4.6-.3 8-4 8-9V5l-8-3Z"/></svg></span>
+    <span class="card-text">Privacy Policy<span>What we collect, and how teen accounts are protected</span></span>
+  </a>
+  <a class="card" href="./terms.html">
+    <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2h6l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z"/><path d="M14 2v5h5"/><path d="M9 13h6M9 17h6"/></svg></span>
+    <span class="card-text">Terms of Service<span>Accounts, subscriptions, classes and acceptable use</span></span>
+  </a>
+  <a class="card" href="./delete-account.html">
+    <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6v13a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6Z"/><path d="M10 11v6M14 11v6"/></svg></span>
+    <span class="card-text">Delete Your Account<span>How to delete your account and what data is removed</span></span>
+  </a>
+  <a class="card" href="./support.html">
+    <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 17v.01"/><path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 1.7-2.5 2-2.5 4"/></svg></span>
+    <span class="card-text">Support<span>Contact us about sign-in, billing, bugs and feedback</span></span>
+  </a>
 </div>
 </body>
 </html>
